@@ -37,6 +37,24 @@ export default class RapportenDetailScreen extends Component {
                 </View>
                 <View style={styles.selectionContainer}>
                     <Image style={styles.containerBackground} source={require('../res/images/Rectangle.png')}/>
+                    <View style={{width: WIDTH - 120, height: '50%', justifyContent: 'center', alignItems:'center', marginTop: -10,}}>
+                        <View style={styles.propertySub}>
+                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3}}>
+                                <Text style={{fontWeight: '500'}}>Appartement</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
+                                <Text style={{fontWeight: '500'}}>Hoekwoning</Text>
+                            </TouchableOpacity>
+                        </View>
+                        <View style={styles.propertySub}>
+                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3,}}>
+                                <Text style={{fontWeight: '500'}}>Tussenwoning</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
+                                <Text style={{fontWeight: '500'}}>2-onder-1-kap</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
                 </View>
                 <View style={styles.propertyContainer}>
                     <Image style={styles.containerBackground} source={require('../res/images/Rectangle.png')}/>
@@ -139,5 +157,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 4,
         marginBottom: 4,
+    },
+    propertySub:{
+        flex: 1,
+        width: WIDTH - 120,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 4,
+        marginTop: 4,
     }
 })

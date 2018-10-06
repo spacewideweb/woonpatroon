@@ -97,6 +97,24 @@ export default class PersonDetailScreen extends Component {
                 </View>
                 <View style={styles.propertyContainer}>
                     <Image source={require('../res/images/BG.png')} style={styles.background}/>
+                    <View style={{width: WIDTH - 120, height: '50%', justifyContent: 'center', alignItems:'center', marginTop: -10,}}>
+                        <View style={styles.propertySub}>
+                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3}}>
+                                <Text style={{fontWeight: '500'}}>Nieuwsgierig</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
+                                <Text style={{fontWeight: '500'}}>Wilt vberkopen</Text>
+                            </TouchableOpacity>
+                        </View>
+                        <View style={styles.propertySub}>
+                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3,}}>
+                                <Text style={{fontWeight: '500'}}>Huur</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
+                                <Text style={{fontWeight: '500'}}>Koop</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
                 </View>
                 <Modal 
                     animationType="fade"
@@ -151,6 +169,8 @@ const styles = StyleSheet.create({
     },
     propertyContainer: {
         flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     background: {
         flex: 1,
@@ -195,6 +215,15 @@ const styles = StyleSheet.create({
     modalButtons: {
         flex: 1,
         flexDirection: 'row',
+    },
+    propertySub:{
+        flex: 1,
+        width: WIDTH - 120,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 4,
+        marginTop: 4,
     }
 })
 

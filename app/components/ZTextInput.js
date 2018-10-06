@@ -70,7 +70,7 @@ const styles = {
     },
     showText: {
         color: '#F00',
-        fontSize: 12,
+        fontSize: 10,
     }
 }
 

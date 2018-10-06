@@ -11,6 +11,7 @@ import RapportenDetailScreen from './containers/RapportenDetailScreen';
 import AanvragenScreen from './containers/AanvragenScreen';
 import AuthLoadingScreen from './containers/AuthLoadingScreen';
 import PersonDetailScreen from './containers/PersonDetailScreen';
+import AdresgegevensScreen from './containers/AdresgegevensScreen';
 
 const AuthStack = createStackNavigator({ SignIn: SignInScreen });
 
@@ -30,7 +31,7 @@ const LeadsStack = createStackNavigator({
 },{
     navigationOptions: ({ navigation }) => ({
         headerStyle: {height: 120},
-        headerTitleStyle: {position:'absolute', width: 200, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: -100, fontSize: 32, color: '#666666', fontWeight: '800'},
+        headerTitleStyle: {position:'absolute', width: 200, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: -100, fontSize: 30, color: '#666666', fontWeight: '800'},
     })
 });
 
@@ -44,18 +45,21 @@ const RapportenStack = createStackNavigator({
 }, {
     navigationOptions: ({ navigation }) => ({
         headerStyle: {height: 120},
-        headerTitleStyle: {position:'absolute', width: 200, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: -100, fontSize: 32, color: '#666666', fontWeight: '800'},
+        headerTitleStyle: {position:'absolute', width: 200, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: -100, fontSize: 30, color: '#666666', fontWeight: '800'},
     })
 });
 
 const AanvragenStack = createStackNavigator({
     Main: {
         screen: AanvragenScreen
+    },
+    Adresgegevens: {
+        screen: AdresgegevensScreen
     }
 },{
     navigationOptions: ({ navigation }) => ({
         headerStyle: {height: 120},
-        headerTitleStyle: {position:'absolute', width: 280, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: -140, fontSize: 32, color: '#666666', fontWeight: '800'},
+        headerTitleStyle: {position:'absolute', width: 300, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: -150, fontSize: 30, color: '#666666', fontWeight: '800'},
     })
 });
 
