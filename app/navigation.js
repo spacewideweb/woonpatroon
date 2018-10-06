@@ -10,6 +10,7 @@ import RapportenMainScreen from './containers/RapportenMainScreen';
 import RapportenDetailScreen from './containers/RapportenDetailScreen';
 import AanvragenScreen from './containers/AanvragenScreen';
 import AuthLoadingScreen from './containers/AuthLoadingScreen';
+import PersonDetailScreen from './containers/PersonDetailScreen';
 
 const AuthStack = createStackNavigator({ SignIn: SignInScreen });
 
@@ -22,6 +23,9 @@ const LeadsStack = createStackNavigator({
     },
     Overzicht: {
         screen: OverzichtScreen
+    },
+    Detail: {
+        screen: PersonDetailScreen
     }
 },{
     navigationOptions: ({ navigation }) => ({
