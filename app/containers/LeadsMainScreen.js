@@ -8,6 +8,7 @@ export default class LeadsMainScreen extends Component {
 
     static navigationOptions = {
         title: 'Mijn leads'
+        
     }
 
     constructor(props) {
@@ -86,5 +87,5 @@ const styles = StyleSheet.create({
         width: 36,
         height: 28,
         resizeMode: 'cover'
-    }
+    },
 })
