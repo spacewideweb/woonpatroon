@@ -5,6 +5,7 @@ import { TouchableOpacity, Text } from 'react-native';
 const propTypes = {
     label: PropTypes.string,
     height: PropTypes.number,
+    onPress: PropTypes.func,
     style: PropTypes.oneOfType([
         PropTypes.number,
         PropTypes.array,
@@ -13,11 +14,12 @@ const propTypes = {
 }
 
 const ZSubmitButton = (props) => {
-    const { label, height, style } = props;
+    const { label, height, style, onPress } = props;
     const { container, labelContainer } = styles;
     
     return (
         <TouchableOpacity
+            onPress={onPress}
             style={[style, container, {borderRadius: height/2}]}>
             <Text style={labelContainer}>{label}</Text>
         </TouchableOpacity>

@@ -12,6 +12,10 @@ export default class SignInScreen extends Component {
         super(props);
     }
 
+    _onSubmitLogin = () => {
+        this.props.navigation.navigate('App');
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -34,7 +38,8 @@ export default class SignInScreen extends Component {
                         <ZSubmitButton
                             label="Log In"
                             height={90}
-                            style={styles.buttonContainer}/>
+                            style={styles.buttonContainer}
+                            onPress={this._onSubmitLogin}/>
                     </View>
                 </View>
             </View>
