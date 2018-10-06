@@ -37,7 +37,7 @@ export default class SignInScreen extends Component {
                             label="Watchtwoord"/>
                         <ZSubmitButton
                             label="Log In"
-                            height={90}
+                            height={60}
                             style={styles.buttonContainer}
                             onPress={this._onSubmitLogin}/>
                     </View>
