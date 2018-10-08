@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Dimensions, TouchableOpacity, Text } from 'react-native';
 
 const WIDTH = Dimensions.get('window').width;
+const chartConfig = {
+    backgroundColor: '#FFF',
+    backgroundGradientFrom: '#FFF',
+    backgroundGradientTo: '#FFF',
+    color: (opacity = 1) => `rgba(0,0,0, ${opacity})`
+}
 
 export default class StatistiekenScreen extends Component {
 
@@ -46,12 +52,26 @@ export default class StatistiekenScreen extends Component {
         if (this.state.page === 0) {
             return (
                 <View style={styles.contentContainer1}>
+                    <View style={styles.labelContainer1}>
+                        <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: WIDTH/3, height: '50%'}}>
+                            <View style={{width: 50, height: 25, backgroundColor: '#4285F4', marginRight: 4}}/>
+                            <Text>Gemiddelde leads</Text>
+                        </View>
+                        <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: WIDTH/3, height: '50%'}}>
+                            <View style={{width: 50, height: 25, backgroundColor: '#0B4B5C', marginRight: 4}}/>
+                            <Text>Mijn leads</Text>
+                        </View>
+                    </View>
+                    <View style={styles.graphContainer1}>
 
+                    </View>
                 </View>
             )
         } else {
             return (
                 <View style={styles.contentContainer2}>
+                    <View style={styles.labelContainer2}>
+                    </View>
                 </View>
             )
         }
@@ -119,10 +139,29 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     contentContainer1: {
-        flex: 7
+        flex: 7,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    labelContainer1: {
+        flex: 2,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    graphContainer1: {
+        flex: 5,
+
     },
     contentContainer2: {
-        flex: 9
+        flex: 9,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    labelContainer2: {
+        flex: 1
+    },
+    graphContainer2: {
+        flex: 6,
     },
     paginationItem: {
         width: 15,
@@ -137,4 +176,4 @@ const styles = StyleSheet.create({
     paginationUnSelect: {
         backgroundColor:'#CCCCCC'
     }
-})
+});

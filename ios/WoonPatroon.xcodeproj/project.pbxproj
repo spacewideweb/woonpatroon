@@ -22,6 +22,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		2A8C60B0814B00D9CFD104ED /* libPods-WoonPatroon-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D1E9254E9FC91F0E55FB7C /* libPods-WoonPatroon-tvOS.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -37,7 +38,62 @@
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		99ED079BE9AE1A381E89855A /* Pods_WoonPatroonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2901BBB241AEE7F35223802 /* Pods_WoonPatroonTests.framework */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		D151A36B216B7BF500DEE657 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A304216B7BF500DEE657 /* BalloonMarker.swift */; };
+		D151A36C216B7BF500DEE657 /* BarDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A306216B7BF500DEE657 /* BarDataExtract.swift */; };
+		D151A36D216B7BF500DEE657 /* RNBarChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A307216B7BF500DEE657 /* RNBarChartManager.swift */; };
+		D151A36E216B7BF500DEE657 /* RNBarChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D151A308216B7BF500DEE657 /* RNBarChartManagerBridge.m */; };
+		D151A36F216B7BF500DEE657 /* RNBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A309216B7BF500DEE657 /* RNBarChartView.swift */; };
+		D151A370216B7BF500DEE657 /* RNBarChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A30A216B7BF500DEE657 /* RNBarChartViewBase.swift */; };
+		D151A371216B7BF500DEE657 /* RNHorizontalBarChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A30B216B7BF500DEE657 /* RNHorizontalBarChartManager.swift */; };
+		D151A372216B7BF500DEE657 /* RNHorizontalBarChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D151A30C216B7BF500DEE657 /* RNHorizontalBarChartManagerBridge.m */; };
+		D151A373216B7BF500DEE657 /* RNHorizontalBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A30D216B7BF500DEE657 /* RNHorizontalBarChartView.swift */; };
+		D151A374216B7BF500DEE657 /* BubbleDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A30F216B7BF500DEE657 /* BubbleDataExtract.swift */; };
+		D151A375216B7BF500DEE657 /* RNBubbleChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A310216B7BF500DEE657 /* RNBubbleChartManager.swift */; };
+		D151A376216B7BF500DEE657 /* RNBubbleChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D151A311216B7BF500DEE657 /* RNBubbleChartManagerBridge.m */; };
+		D151A377216B7BF500DEE657 /* RNBubbleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A312216B7BF500DEE657 /* RNBubbleChartView.swift */; };
+		D151A378216B7BF500DEE657 /* CandleDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A314216B7BF500DEE657 /* CandleDataExtract.swift */; };
+		D151A379216B7BF500DEE657 /* RNCandleStickChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A315216B7BF500DEE657 /* RNCandleStickChartManager.swift */; };
+		D151A37A216B7BF500DEE657 /* RNCandleStickChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D151A316216B7BF500DEE657 /* RNCandleStickChartManagerBridge.m */; };
+		D151A37B216B7BF500DEE657 /* RNCandleStickChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A317216B7BF500DEE657 /* RNCandleStickChartView.swift */; };
+		D151A37C216B7BF500DEE657 /* ChartGroupHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A318216B7BF500DEE657 /* ChartGroupHolder.swift */; };
+		D151A37D216B7BF500DEE657 /* CombinedDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A31A216B7BF500DEE657 /* CombinedDataExtract.swift */; };
+		D151A37E216B7BF500DEE657 /* RNCombinedChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A31B216B7BF500DEE657 /* RNCombinedChartManager.swift */; };
+		D151A37F216B7BF500DEE657 /* RNCombinedChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D151A31C216B7BF500DEE657 /* RNCombinedChartManagerBridge.m */; };
+		D151A380216B7BF500DEE657 /* RNCombinedChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A31D216B7BF500DEE657 /* RNCombinedChartView.swift */; };
+		D151A381216B7BF500DEE657 /* CustomChartDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A31E216B7BF500DEE657 /* CustomChartDateFormatter.swift */; };
+		D151A382216B7BF500DEE657 /* DataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A31F216B7BF500DEE657 /* DataExtract.swift */; };
+		D151A383216B7BF500DEE657 /* ChartDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A321216B7BF500DEE657 /* ChartDateFormatter.swift */; };
+		D151A384216B7BF500DEE657 /* LargeValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A322216B7BF500DEE657 /* LargeValueFormatter.swift */; };
+		D151A385216B7BF500DEE657 /* IndexValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A323216B7BF500DEE657 /* IndexValueFormatter.swift */; };
+		D151A386216B7BF500DEE657 /* LineDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A325216B7BF500DEE657 /* LineDataExtract.swift */; };
+		D151A387216B7BF500DEE657 /* RNLineChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A326216B7BF500DEE657 /* RNLineChartManager.swift */; };
+		D151A388216B7BF500DEE657 /* RNLineChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D151A327216B7BF500DEE657 /* RNLineChartManagerBridge.m */; };
+		D151A389216B7BF500DEE657 /* RNLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A328216B7BF500DEE657 /* RNLineChartView.swift */; };
+		D151A38A216B7BF500DEE657 /* PieDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A32A216B7BF500DEE657 /* PieDataExtract.swift */; };
+		D151A38B216B7BF500DEE657 /* RNPieChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A32B216B7BF500DEE657 /* RNPieChartManager.swift */; };
+		D151A38C216B7BF500DEE657 /* RNPieChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D151A32C216B7BF500DEE657 /* RNPieChartManagerBridge.m */; };
+		D151A38D216B7BF500DEE657 /* RNPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A32D216B7BF500DEE657 /* RNPieChartView.swift */; };
+		D151A38E216B7BF500DEE657 /* RadarDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A32F216B7BF500DEE657 /* RadarDataExtract.swift */; };
+		D151A38F216B7BF500DEE657 /* RNRadarChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A330216B7BF500DEE657 /* RNRadarChartManager.swift */; };
+		D151A390216B7BF500DEE657 /* RNRadarChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D151A331216B7BF500DEE657 /* RNRadarChartManagerBridge.m */; };
+		D151A391216B7BF500DEE657 /* RNRadarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A332216B7BF500DEE657 /* RNRadarChartView.swift */; };
+		D151A392216B7BF500DEE657 /* RNBarLineChartBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A333216B7BF500DEE657 /* RNBarLineChartBaseManager.swift */; };
+		D151A393216B7BF500DEE657 /* RNBarLineChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A335216B7BF500DEE657 /* RNBarLineChartViewBase.swift */; };
+		D151A394216B7BF500DEE657 /* RNChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A338216B7BF500DEE657 /* RNChartViewBase.swift */; };
+		D151A395216B7BF500DEE657 /* RNYAxisChartViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A33A216B7BF500DEE657 /* RNYAxisChartViewBase.swift */; };
+		D151A396216B7BF500DEE657 /* RNScatterChartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A33C216B7BF500DEE657 /* RNScatterChartManager.swift */; };
+		D151A397216B7BF500DEE657 /* RNScatterChartManagerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D151A33D216B7BF500DEE657 /* RNScatterChartManagerBridge.m */; };
+		D151A398216B7BF500DEE657 /* RNScatterChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A33E216B7BF500DEE657 /* RNScatterChartView.swift */; };
+		D151A399216B7BF500DEE657 /* ScatterDataExtract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A33F216B7BF500DEE657 /* ScatterDataExtract.swift */; };
+		D151A39A216B7BF500DEE657 /* BridgeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A341216B7BF500DEE657 /* BridgeUtils.swift */; };
+		D151A39B216B7BF500DEE657 /* ChartDataSetConfigUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A342216B7BF500DEE657 /* ChartDataSetConfigUtils.swift */; };
+		D151A39C216B7BF500DEE657 /* EntryToDictionaryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A343216B7BF500DEE657 /* EntryToDictionaryUtils.swift */; };
+		D151A39D216B7BF500DEE657 /* FontUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A344216B7BF500DEE657 /* FontUtils.swift */; };
+		D151A39E216B7BF500DEE657 /* HighlightUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151A345216B7BF500DEE657 /* HighlightUtils.swift */; };
+		F7C3FDF907DD21FFDB1A14AF /* Pods_WoonPatroon_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC7B87734E7755159468953 /* Pods_WoonPatroon_tvOSTests.framework */; };
+		FD9790ED9EB9CF984B782D50 /* Pods_WoonPatroon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFB396DE33BBED3BA0DEBBA /* Pods_WoonPatroon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,13 +392,82 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WoonPatroon/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WoonPatroon/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		25D1E9254E9FC91F0E55FB7C /* libPods-WoonPatroon-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WoonPatroon-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* WoonPatroon-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WoonPatroon-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* WoonPatroon-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WoonPatroon-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F230BF2880F9B42859F69A1 /* Pods-WoonPatroonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoonPatroonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoonPatroonTests/Pods-WoonPatroonTests.release.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		6BFB396DE33BBED3BA0DEBBA /* Pods_WoonPatroon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoonPatroon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC7B87734E7755159468953 /* Pods_WoonPatroon_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoonPatroon_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		7E64FCF3D318204883D21997 /* Pods-WoonPatroon-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoonPatroon-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoonPatroon-tvOS/Pods-WoonPatroon-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8F1BE84B9D4D25D3824845D1 /* Pods-WoonPatroon-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoonPatroon-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoonPatroon-tvOSTests/Pods-WoonPatroon-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FC5BE5426CB5677034EDF3A /* Pods-WoonPatroon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoonPatroon.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoonPatroon/Pods-WoonPatroon.release.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		C7FE6E5631FF419D10DB3673 /* Pods-WoonPatroon-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoonPatroon-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoonPatroon-tvOSTests/Pods-WoonPatroon-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D151A304216B7BF500DEE657 /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		D151A306216B7BF500DEE657 /* BarDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDataExtract.swift; sourceTree = "<group>"; };
+		D151A307216B7BF500DEE657 /* RNBarChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarChartManager.swift; sourceTree = "<group>"; };
+		D151A308216B7BF500DEE657 /* RNBarChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBarChartManagerBridge.m; sourceTree = "<group>"; };
+		D151A309216B7BF500DEE657 /* RNBarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarChartView.swift; sourceTree = "<group>"; };
+		D151A30A216B7BF500DEE657 /* RNBarChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarChartViewBase.swift; sourceTree = "<group>"; };
+		D151A30B216B7BF500DEE657 /* RNHorizontalBarChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNHorizontalBarChartManager.swift; sourceTree = "<group>"; };
+		D151A30C216B7BF500DEE657 /* RNHorizontalBarChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNHorizontalBarChartManagerBridge.m; sourceTree = "<group>"; };
+		D151A30D216B7BF500DEE657 /* RNHorizontalBarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNHorizontalBarChartView.swift; sourceTree = "<group>"; };
+		D151A30F216B7BF500DEE657 /* BubbleDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleDataExtract.swift; sourceTree = "<group>"; };
+		D151A310216B7BF500DEE657 /* RNBubbleChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBubbleChartManager.swift; sourceTree = "<group>"; };
+		D151A311216B7BF500DEE657 /* RNBubbleChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBubbleChartManagerBridge.m; sourceTree = "<group>"; };
+		D151A312216B7BF500DEE657 /* RNBubbleChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBubbleChartView.swift; sourceTree = "<group>"; };
+		D151A314216B7BF500DEE657 /* CandleDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandleDataExtract.swift; sourceTree = "<group>"; };
+		D151A315216B7BF500DEE657 /* RNCandleStickChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCandleStickChartManager.swift; sourceTree = "<group>"; };
+		D151A316216B7BF500DEE657 /* RNCandleStickChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCandleStickChartManagerBridge.m; sourceTree = "<group>"; };
+		D151A317216B7BF500DEE657 /* RNCandleStickChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCandleStickChartView.swift; sourceTree = "<group>"; };
+		D151A318216B7BF500DEE657 /* ChartGroupHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartGroupHolder.swift; sourceTree = "<group>"; };
+		D151A31A216B7BF500DEE657 /* CombinedDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedDataExtract.swift; sourceTree = "<group>"; };
+		D151A31B216B7BF500DEE657 /* RNCombinedChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCombinedChartManager.swift; sourceTree = "<group>"; };
+		D151A31C216B7BF500DEE657 /* RNCombinedChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCombinedChartManagerBridge.m; sourceTree = "<group>"; };
+		D151A31D216B7BF500DEE657 /* RNCombinedChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCombinedChartView.swift; sourceTree = "<group>"; };
+		D151A31E216B7BF500DEE657 /* CustomChartDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomChartDateFormatter.swift; sourceTree = "<group>"; };
+		D151A31F216B7BF500DEE657 /* DataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtract.swift; sourceTree = "<group>"; };
+		D151A321216B7BF500DEE657 /* ChartDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDateFormatter.swift; sourceTree = "<group>"; };
+		D151A322216B7BF500DEE657 /* LargeValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeValueFormatter.swift; sourceTree = "<group>"; };
+		D151A323216B7BF500DEE657 /* IndexValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexValueFormatter.swift; sourceTree = "<group>"; };
+		D151A325216B7BF500DEE657 /* LineDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineDataExtract.swift; sourceTree = "<group>"; };
+		D151A326216B7BF500DEE657 /* RNLineChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNLineChartManager.swift; sourceTree = "<group>"; };
+		D151A327216B7BF500DEE657 /* RNLineChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNLineChartManagerBridge.m; sourceTree = "<group>"; };
+		D151A328216B7BF500DEE657 /* RNLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNLineChartView.swift; sourceTree = "<group>"; };
+		D151A32A216B7BF500DEE657 /* PieDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieDataExtract.swift; sourceTree = "<group>"; };
+		D151A32B216B7BF500DEE657 /* RNPieChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNPieChartManager.swift; sourceTree = "<group>"; };
+		D151A32C216B7BF500DEE657 /* RNPieChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPieChartManagerBridge.m; sourceTree = "<group>"; };
+		D151A32D216B7BF500DEE657 /* RNPieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNPieChartView.swift; sourceTree = "<group>"; };
+		D151A32F216B7BF500DEE657 /* RadarDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarDataExtract.swift; sourceTree = "<group>"; };
+		D151A330216B7BF500DEE657 /* RNRadarChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNRadarChartManager.swift; sourceTree = "<group>"; };
+		D151A331216B7BF500DEE657 /* RNRadarChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNRadarChartManagerBridge.m; sourceTree = "<group>"; };
+		D151A332216B7BF500DEE657 /* RNRadarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNRadarChartView.swift; sourceTree = "<group>"; };
+		D151A333216B7BF500DEE657 /* RNBarLineChartBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarLineChartBaseManager.swift; sourceTree = "<group>"; };
+		D151A334216B7BF500DEE657 /* RNBarLineChartManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBarLineChartManagerBridge.h; sourceTree = "<group>"; };
+		D151A335216B7BF500DEE657 /* RNBarLineChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNBarLineChartViewBase.swift; sourceTree = "<group>"; };
+		D151A336216B7BF500DEE657 /* RNChartManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNChartManagerBridge.h; sourceTree = "<group>"; };
+		D151A337216B7BF500DEE657 /* RNCharts-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCharts-Bridging-Header.h"; sourceTree = "<group>"; };
+		D151A338216B7BF500DEE657 /* RNChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNChartViewBase.swift; sourceTree = "<group>"; };
+		D151A339216B7BF500DEE657 /* RNYAxisChartManagerBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNYAxisChartManagerBridge.h; sourceTree = "<group>"; };
+		D151A33A216B7BF500DEE657 /* RNYAxisChartViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNYAxisChartViewBase.swift; sourceTree = "<group>"; };
+		D151A33C216B7BF500DEE657 /* RNScatterChartManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNScatterChartManager.swift; sourceTree = "<group>"; };
+		D151A33D216B7BF500DEE657 /* RNScatterChartManagerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNScatterChartManagerBridge.m; sourceTree = "<group>"; };
+		D151A33E216B7BF500DEE657 /* RNScatterChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNScatterChartView.swift; sourceTree = "<group>"; };
+		D151A33F216B7BF500DEE657 /* ScatterDataExtract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScatterDataExtract.swift; sourceTree = "<group>"; };
+		D151A341216B7BF500DEE657 /* BridgeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeUtils.swift; sourceTree = "<group>"; };
+		D151A342216B7BF500DEE657 /* ChartDataSetConfigUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDataSetConfigUtils.swift; sourceTree = "<group>"; };
+		D151A343216B7BF500DEE657 /* EntryToDictionaryUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryToDictionaryUtils.swift; sourceTree = "<group>"; };
+		D151A344216B7BF500DEE657 /* FontUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontUtils.swift; sourceTree = "<group>"; };
+		D151A345216B7BF500DEE657 /* HighlightUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightUtils.swift; sourceTree = "<group>"; };
+		D151A39F216B7C3000DEE657 /* WoonPatroon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WoonPatroon-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2901BBB241AEE7F35223802 /* Pods_WoonPatroonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoonPatroonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D7FDED5D1532BD7DEC9691 /* Pods-WoonPatroon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoonPatroon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoonPatroon/Pods-WoonPatroon.debug.xcconfig"; sourceTree = "<group>"; };
+		F67D124CBF7C907E5B9BE411 /* Pods-WoonPatroonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoonPatroonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoonPatroonTests/Pods-WoonPatroonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FABD7ADADA1EBD3292E45DD9 /* Pods-WoonPatroon-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoonPatroon-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoonPatroon-tvOS/Pods-WoonPatroon-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				99ED079BE9AE1A381E89855A /* Pods_WoonPatroonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +497,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				FD9790ED9EB9CF984B782D50 /* Pods_WoonPatroon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +513,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				2A8C60B0814B00D9CFD104ED /* libPods-WoonPatroon-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
+				F7C3FDF907DD21FFDB1A14AF /* Pods_WoonPatroon_tvOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,8 +649,27 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				6BFB396DE33BBED3BA0DEBBA /* Pods_WoonPatroon.framework */,
+				25D1E9254E9FC91F0E55FB7C /* libPods-WoonPatroon-tvOS.a */,
+				6FC7B87734E7755159468953 /* Pods_WoonPatroon_tvOSTests.framework */,
+				E2901BBB241AEE7F35223802 /* Pods_WoonPatroonTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		440EA430429880CBA8E0718F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5D7FDED5D1532BD7DEC9691 /* Pods-WoonPatroon.debug.xcconfig */,
+				9FC5BE5426CB5677034EDF3A /* Pods-WoonPatroon.release.xcconfig */,
+				7E64FCF3D318204883D21997 /* Pods-WoonPatroon-tvOS.debug.xcconfig */,
+				FABD7ADADA1EBD3292E45DD9 /* Pods-WoonPatroon-tvOS.release.xcconfig */,
+				C7FE6E5631FF419D10DB3673 /* Pods-WoonPatroon-tvOSTests.debug.xcconfig */,
+				8F1BE84B9D4D25D3824845D1 /* Pods-WoonPatroon-tvOSTests.release.xcconfig */,
+				F67D124CBF7C907E5B9BE411 /* Pods-WoonPatroonTests.debug.xcconfig */,
+				2F230BF2880F9B42859F69A1 /* Pods-WoonPatroonTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -573,11 +721,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D151A39F216B7C3000DEE657 /* WoonPatroon-Bridging-Header.h */,
+				D151A303216B7BF500DEE657 /* ReactNativeCharts */,
 				13B07FAE1A68108700A75B9A /* WoonPatroon */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WoonPatroonTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				440EA430429880CBA8E0718F /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -604,6 +755,150 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D151A303216B7BF500DEE657 /* ReactNativeCharts */ = {
+			isa = PBXGroup;
+			children = (
+				D151A304216B7BF500DEE657 /* BalloonMarker.swift */,
+				D151A305216B7BF500DEE657 /* bar */,
+				D151A30E216B7BF500DEE657 /* bubble */,
+				D151A313216B7BF500DEE657 /* candlestick */,
+				D151A318216B7BF500DEE657 /* ChartGroupHolder.swift */,
+				D151A319216B7BF500DEE657 /* combine */,
+				D151A31E216B7BF500DEE657 /* CustomChartDateFormatter.swift */,
+				D151A31F216B7BF500DEE657 /* DataExtract.swift */,
+				D151A320216B7BF500DEE657 /* formatters */,
+				D151A323216B7BF500DEE657 /* IndexValueFormatter.swift */,
+				D151A324216B7BF500DEE657 /* line */,
+				D151A329216B7BF500DEE657 /* pie */,
+				D151A32E216B7BF500DEE657 /* radar */,
+				D151A333216B7BF500DEE657 /* RNBarLineChartBaseManager.swift */,
+				D151A334216B7BF500DEE657 /* RNBarLineChartManagerBridge.h */,
+				D151A335216B7BF500DEE657 /* RNBarLineChartViewBase.swift */,
+				D151A336216B7BF500DEE657 /* RNChartManagerBridge.h */,
+				D151A337216B7BF500DEE657 /* RNCharts-Bridging-Header.h */,
+				D151A338216B7BF500DEE657 /* RNChartViewBase.swift */,
+				D151A339216B7BF500DEE657 /* RNYAxisChartManagerBridge.h */,
+				D151A33A216B7BF500DEE657 /* RNYAxisChartViewBase.swift */,
+				D151A33B216B7BF500DEE657 /* scatter */,
+				D151A340216B7BF500DEE657 /* utils */,
+			);
+			name = ReactNativeCharts;
+			path = "../node_modules/react-native-charts-wrapper/ios/ReactNativeCharts";
+			sourceTree = "<group>";
+		};
+		D151A305216B7BF500DEE657 /* bar */ = {
+			isa = PBXGroup;
+			children = (
+				D151A306216B7BF500DEE657 /* BarDataExtract.swift */,
+				D151A307216B7BF500DEE657 /* RNBarChartManager.swift */,
+				D151A308216B7BF500DEE657 /* RNBarChartManagerBridge.m */,
+				D151A309216B7BF500DEE657 /* RNBarChartView.swift */,
+				D151A30A216B7BF500DEE657 /* RNBarChartViewBase.swift */,
+				D151A30B216B7BF500DEE657 /* RNHorizontalBarChartManager.swift */,
+				D151A30C216B7BF500DEE657 /* RNHorizontalBarChartManagerBridge.m */,
+				D151A30D216B7BF500DEE657 /* RNHorizontalBarChartView.swift */,
+			);
+			path = bar;
+			sourceTree = "<group>";
+		};
+		D151A30E216B7BF500DEE657 /* bubble */ = {
+			isa = PBXGroup;
+			children = (
+				D151A30F216B7BF500DEE657 /* BubbleDataExtract.swift */,
+				D151A310216B7BF500DEE657 /* RNBubbleChartManager.swift */,
+				D151A311216B7BF500DEE657 /* RNBubbleChartManagerBridge.m */,
+				D151A312216B7BF500DEE657 /* RNBubbleChartView.swift */,
+			);
+			path = bubble;
+			sourceTree = "<group>";
+		};
+		D151A313216B7BF500DEE657 /* candlestick */ = {
+			isa = PBXGroup;
+			children = (
+				D151A314216B7BF500DEE657 /* CandleDataExtract.swift */,
+				D151A315216B7BF500DEE657 /* RNCandleStickChartManager.swift */,
+				D151A316216B7BF500DEE657 /* RNCandleStickChartManagerBridge.m */,
+				D151A317216B7BF500DEE657 /* RNCandleStickChartView.swift */,
+			);
+			path = candlestick;
+			sourceTree = "<group>";
+		};
+		D151A319216B7BF500DEE657 /* combine */ = {
+			isa = PBXGroup;
+			children = (
+				D151A31A216B7BF500DEE657 /* CombinedDataExtract.swift */,
+				D151A31B216B7BF500DEE657 /* RNCombinedChartManager.swift */,
+				D151A31C216B7BF500DEE657 /* RNCombinedChartManagerBridge.m */,
+				D151A31D216B7BF500DEE657 /* RNCombinedChartView.swift */,
+			);
+			path = combine;
+			sourceTree = "<group>";
+		};
+		D151A320216B7BF500DEE657 /* formatters */ = {
+			isa = PBXGroup;
+			children = (
+				D151A321216B7BF500DEE657 /* ChartDateFormatter.swift */,
+				D151A322216B7BF500DEE657 /* LargeValueFormatter.swift */,
+			);
+			path = formatters;
+			sourceTree = "<group>";
+		};
+		D151A324216B7BF500DEE657 /* line */ = {
+			isa = PBXGroup;
+			children = (
+				D151A325216B7BF500DEE657 /* LineDataExtract.swift */,
+				D151A326216B7BF500DEE657 /* RNLineChartManager.swift */,
+				D151A327216B7BF500DEE657 /* RNLineChartManagerBridge.m */,
+				D151A328216B7BF500DEE657 /* RNLineChartView.swift */,
+			);
+			path = line;
+			sourceTree = "<group>";
+		};
+		D151A329216B7BF500DEE657 /* pie */ = {
+			isa = PBXGroup;
+			children = (
+				D151A32A216B7BF500DEE657 /* PieDataExtract.swift */,
+				D151A32B216B7BF500DEE657 /* RNPieChartManager.swift */,
+				D151A32C216B7BF500DEE657 /* RNPieChartManagerBridge.m */,
+				D151A32D216B7BF500DEE657 /* RNPieChartView.swift */,
+			);
+			path = pie;
+			sourceTree = "<group>";
+		};
+		D151A32E216B7BF500DEE657 /* radar */ = {
+			isa = PBXGroup;
+			children = (
+				D151A32F216B7BF500DEE657 /* RadarDataExtract.swift */,
+				D151A330216B7BF500DEE657 /* RNRadarChartManager.swift */,
+				D151A331216B7BF500DEE657 /* RNRadarChartManagerBridge.m */,
+				D151A332216B7BF500DEE657 /* RNRadarChartView.swift */,
+			);
+			path = radar;
+			sourceTree = "<group>";
+		};
+		D151A33B216B7BF500DEE657 /* scatter */ = {
+			isa = PBXGroup;
+			children = (
+				D151A33C216B7BF500DEE657 /* RNScatterChartManager.swift */,
+				D151A33D216B7BF500DEE657 /* RNScatterChartManagerBridge.m */,
+				D151A33E216B7BF500DEE657 /* RNScatterChartView.swift */,
+				D151A33F216B7BF500DEE657 /* ScatterDataExtract.swift */,
+			);
+			path = scatter;
+			sourceTree = "<group>";
+		};
+		D151A340216B7BF500DEE657 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				D151A341216B7BF500DEE657 /* BridgeUtils.swift */,
+				D151A342216B7BF500DEE657 /* ChartDataSetConfigUtils.swift */,
+				D151A343216B7BF500DEE657 /* EntryToDictionaryUtils.swift */,
+				D151A344216B7BF500DEE657 /* FontUtils.swift */,
+				D151A345216B7BF500DEE657 /* HighlightUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -611,9 +906,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WoonPatroonTests" */;
 			buildPhases = (
+				500381A9A40D9094382A5663 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				5EE0CF7037D02EF154FF37F2 /* [CP] Embed Pods Frameworks */,
+				C21EC6D05B5052E95FEDDF5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -629,10 +927,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WoonPatroon" */;
 			buildPhases = (
+				4A99E1294908F02CB1D01A93 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				59A0DBEA71350E223406F574 /* [CP] Embed Pods Frameworks */,
+				E17ADF0C67937B2AF9A171D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -647,10 +948,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WoonPatroon-tvOS" */;
 			buildPhases = (
+				3D73598F7E1FDCBB34DD3AE1 /* [CP] Check Pods Manifest.lock */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
 				2D02E4791E0B4A5D006451C7 /* Resources */,
 				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+				97D3A378EA8BEF464730A00B /* [CP] Embed Pods Frameworks */,
+				40C8F211B222B2321558CBDF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -665,9 +969,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WoonPatroon-tvOSTests" */;
 			buildPhases = (
+				E3B41F112CB2F4BB9BA40B1D /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
+				25884E13CDAD539E933F215A /* [CP] Embed Pods Frameworks */,
+				41A5204CD0095E3358EBC453 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1085,6 +1392,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		25884E13CDAD539E933F215A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoonPatroon-tvOSTests/Pods-WoonPatroon-tvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1098,6 +1420,188 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		3D73598F7E1FDCBB34DD3AE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoonPatroon-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40C8F211B222B2321558CBDF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoonPatroon-tvOS/Pods-WoonPatroon-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41A5204CD0095E3358EBC453 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoonPatroon-tvOSTests/Pods-WoonPatroon-tvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A99E1294908F02CB1D01A93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoonPatroon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500381A9A40D9094382A5663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoonPatroonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59A0DBEA71350E223406F574 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WoonPatroon/Pods-WoonPatroon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoonPatroon/Pods-WoonPatroon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EE0CF7037D02EF154FF37F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoonPatroonTests/Pods-WoonPatroonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97D3A378EA8BEF464730A00B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoonPatroon-tvOS/Pods-WoonPatroon-tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C21EC6D05B5052E95FEDDF5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoonPatroonTests/Pods-WoonPatroonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E17ADF0C67937B2AF9A171D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoonPatroon/Pods-WoonPatroon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3B41F112CB2F4BB9BA40B1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoonPatroon-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1114,8 +1618,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D151A370216B7BF500DEE657 /* RNBarChartViewBase.swift in Sources */,
+				D151A371216B7BF500DEE657 /* RNHorizontalBarChartManager.swift in Sources */,
+				D151A38F216B7BF500DEE657 /* RNRadarChartManager.swift in Sources */,
+				D151A380216B7BF500DEE657 /* RNCombinedChartView.swift in Sources */,
+				D151A38D216B7BF500DEE657 /* RNPieChartView.swift in Sources */,
+				D151A37B216B7BF500DEE657 /* RNCandleStickChartView.swift in Sources */,
+				D151A39E216B7BF500DEE657 /* HighlightUtils.swift in Sources */,
+				D151A36B216B7BF500DEE657 /* BalloonMarker.swift in Sources */,
+				D151A36C216B7BF500DEE657 /* BarDataExtract.swift in Sources */,
+				D151A39D216B7BF500DEE657 /* FontUtils.swift in Sources */,
+				D151A373216B7BF500DEE657 /* RNHorizontalBarChartView.swift in Sources */,
+				D151A397216B7BF500DEE657 /* RNScatterChartManagerBridge.m in Sources */,
+				D151A392216B7BF500DEE657 /* RNBarLineChartBaseManager.swift in Sources */,
+				D151A399216B7BF500DEE657 /* ScatterDataExtract.swift in Sources */,
+				D151A386216B7BF500DEE657 /* LineDataExtract.swift in Sources */,
+				D151A37C216B7BF500DEE657 /* ChartGroupHolder.swift in Sources */,
+				D151A395216B7BF500DEE657 /* RNYAxisChartViewBase.swift in Sources */,
+				D151A39C216B7BF500DEE657 /* EntryToDictionaryUtils.swift in Sources */,
+				D151A375216B7BF500DEE657 /* RNBubbleChartManager.swift in Sources */,
+				D151A383216B7BF500DEE657 /* ChartDateFormatter.swift in Sources */,
+				D151A36D216B7BF500DEE657 /* RNBarChartManager.swift in Sources */,
+				D151A372216B7BF500DEE657 /* RNHorizontalBarChartManagerBridge.m in Sources */,
+				D151A374216B7BF500DEE657 /* BubbleDataExtract.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D151A39B216B7BF500DEE657 /* ChartDataSetConfigUtils.swift in Sources */,
+				D151A37A216B7BF500DEE657 /* RNCandleStickChartManagerBridge.m in Sources */,
+				D151A385216B7BF500DEE657 /* IndexValueFormatter.swift in Sources */,
+				D151A391216B7BF500DEE657 /* RNRadarChartView.swift in Sources */,
+				D151A38A216B7BF500DEE657 /* PieDataExtract.swift in Sources */,
+				D151A377216B7BF500DEE657 /* RNBubbleChartView.swift in Sources */,
+				D151A38C216B7BF500DEE657 /* RNPieChartManagerBridge.m in Sources */,
+				D151A39A216B7BF500DEE657 /* BridgeUtils.swift in Sources */,
+				D151A379216B7BF500DEE657 /* RNCandleStickChartManager.swift in Sources */,
+				D151A376216B7BF500DEE657 /* RNBubbleChartManagerBridge.m in Sources */,
+				D151A37F216B7BF500DEE657 /* RNCombinedChartManagerBridge.m in Sources */,
+				D151A396216B7BF500DEE657 /* RNScatterChartManager.swift in Sources */,
+				D151A390216B7BF500DEE657 /* RNRadarChartManagerBridge.m in Sources */,
+				D151A393216B7BF500DEE657 /* RNBarLineChartViewBase.swift in Sources */,
+				D151A384216B7BF500DEE657 /* LargeValueFormatter.swift in Sources */,
+				D151A388216B7BF500DEE657 /* RNLineChartManagerBridge.m in Sources */,
+				D151A36F216B7BF500DEE657 /* RNBarChartView.swift in Sources */,
+				D151A381216B7BF500DEE657 /* CustomChartDateFormatter.swift in Sources */,
+				D151A37D216B7BF500DEE657 /* CombinedDataExtract.swift in Sources */,
+				D151A398216B7BF500DEE657 /* RNScatterChartView.swift in Sources */,
+				D151A38B216B7BF500DEE657 /* RNPieChartManager.swift in Sources */,
+				D151A394216B7BF500DEE657 /* RNChartViewBase.swift in Sources */,
+				D151A37E216B7BF500DEE657 /* RNCombinedChartManager.swift in Sources */,
+				D151A38E216B7BF500DEE657 /* RadarDataExtract.swift in Sources */,
+				D151A389216B7BF500DEE657 /* RNLineChartView.swift in Sources */,
+				D151A378216B7BF500DEE657 /* CandleDataExtract.swift in Sources */,
+				D151A36E216B7BF500DEE657 /* RNBarChartManagerBridge.m in Sources */,
+				D151A387216B7BF500DEE657 /* RNLineChartManager.swift in Sources */,
+				D151A382216B7BF500DEE657 /* DataExtract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1166,7 +1722,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67D124CBF7C907E5B9BE411 /* Pods-WoonPatroonTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1186,7 +1744,9 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F230BF2880F9B42859F69A1 /* Pods-WoonPatroonTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = WoonPatroonTests/Info.plist;
@@ -1203,6 +1763,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D7FDED5D1532BD7DEC9691 /* Pods-WoonPatroon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1215,12 +1776,14 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = WoonPatroon;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sonnaris/Documents/WoonPatroon/ios/WoonPatroon-Bridging-Header.h";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC5BE5426CB5677034EDF3A /* Pods-WoonPatroon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1232,12 +1795,14 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = WoonPatroon;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sonnaris/Documents/WoonPatroon/ios/WoonPatroon-Bridging-Header.h";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E64FCF3D318204883D21997 /* Pods-WoonPatroon-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1264,6 +1829,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABD7ADADA1EBD3292E45DD9 /* Pods-WoonPatroon-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1290,6 +1856,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FE6E5631FF419D10DB3673 /* Pods-WoonPatroon-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1315,6 +1882,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1BE84B9D4D25D3824845D1 /* Pods-WoonPatroon-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

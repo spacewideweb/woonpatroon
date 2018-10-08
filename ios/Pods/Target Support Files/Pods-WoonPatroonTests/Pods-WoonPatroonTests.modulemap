@@ -1,0 +1,6 @@
+framework module Pods_WoonPatroonTests {
+  umbrella header "Pods-WoonPatroonTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
