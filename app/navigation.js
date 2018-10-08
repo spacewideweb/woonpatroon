@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image } from 'react-native';
+import { Dimensions } from 'react-native';
 
 import { createSwitchNavigator, createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import SignInScreen from './containers/SignInScree';
@@ -12,6 +13,8 @@ import AanvragenScreen from './containers/AanvragenScreen';
 import AuthLoadingScreen from './containers/AuthLoadingScreen';
 import PersonDetailScreen from './containers/PersonDetailScreen';
 import AdresgegevensScreen from './containers/AdresgegevensScreen';
+
+const WIDTH = Dimensions.get('window').width;
 
 const AuthStack = createStackNavigator({ SignIn: SignInScreen });
 
@@ -31,7 +34,7 @@ const LeadsStack = createStackNavigator({
 },{
     navigationOptions: ({ navigation }) => ({
         headerStyle: {height: 120},
-        headerTitleStyle: {position:'absolute', width: 200, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: -100, fontSize: 30, color: '#666666', fontWeight: '800'},
+        headerTitleStyle: {position:'absolute', width: WIDTH, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: - WIDTH / 2, fontSize: 30, color: '#666666', fontWeight: '800'},
     })
 });
 
@@ -45,7 +48,7 @@ const RapportenStack = createStackNavigator({
 }, {
     navigationOptions: ({ navigation }) => ({
         headerStyle: {height: 120},
-        headerTitleStyle: {position:'absolute', width: 200, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: -100, fontSize: 30, color: '#666666', fontWeight: '800'},
+        headerTitleStyle: {position:'absolute', width: WIDTH, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: - WIDTH / 2, fontSize: 30, color: '#666666', fontWeight: '800'},
     })
 });
 
@@ -59,7 +62,7 @@ const AanvragenStack = createStackNavigator({
 },{
     navigationOptions: ({ navigation }) => ({
         headerStyle: {height: 120},
-        headerTitleStyle: {position:'absolute', width: 300, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: -150, fontSize: 30, color: '#666666', fontWeight: '800'},
+        headerTitleStyle: {position:'absolute', width: WIDTH, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: - WIDTH / 2, fontSize: 30, color: '#666666', fontWeight: '800'},
     })
 });
 
