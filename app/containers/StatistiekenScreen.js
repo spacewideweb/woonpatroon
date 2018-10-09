@@ -430,10 +430,10 @@ export default class StatistiekenScreen extends Component {
                     style={{width: Dimensions.get('window').width, height: Dimensions.get('window').height/4, justifyContent: 'center', alignItems:'center', marginTop: -30}}>
                     <Image source={require('../res/images/Rectangle.png')} style={{flex: 1, width: '100%', height: '100%', top: 0, left: 0, position: 'absolute', resizeMode: 'stretch'}}/>
                     <View style={{flexDirection: 'row', width: Dimensions.get('window').width * 0.8, justifyContent: 'center', alignItems: 'center', marginHorizontal: 10}}>
-                        <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', marginLeft: 3, width: Dimensions.get('window').width * 0.35,  height: 45, borderRadius: 6, backgroundColor: '#FFF', borderColor: '#CCCCCC', borderWidth: 0.5}}>
+                        <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', marginRight: 3, width: Dimensions.get('window').width * 0.35,  height: 45, borderRadius: 6, backgroundColor: '#FFF', borderColor: '#CCCCCC', borderWidth: 0.5}}>
                             <Text style={{fontSize: 15, fontWeight: '500', color: '#000'}}>30 dagen</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', marginRight: 3, width: Dimensions.get('window').width * 0.35, height: 45, borderRadius: 6, backgroundColor: '#4285F4'}}>
+                        <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', marginLeft: 3, width: Dimensions.get('window').width * 0.35, height: 45, borderRadius: 6, backgroundColor: '#4285F4'}}>
                             <Text style={{fontSize: 15, fontWeight: '500', color: '#FFF'}}>90 dagen</Text>
                         </TouchableOpacity>
                     </View>
@@ -538,7 +538,7 @@ export default class StatistiekenScreen extends Component {
                     style={{width: Dimensions.get('window').width, height: Dimensions.get('window').height/4, justifyContent: 'center', alignItems:'center', marginTop: -30}}>
                     <Image source={require('../res/images/Rectangle.png')} style={{flex: 1, width: '100%', height: '100%', top: 0, left: 0, position: 'absolute', resizeMode: 'stretch'}}/>
                     <View style={{flexDirection: 'row', width: Dimensions.get('window').width * 0.8, justifyContent: 'center', alignItems: 'center', marginHorizontal: 10}}>
-                        <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', marginLeft: 3, width: Dimensions.get('window').width * 0.35,  height: 45, borderRadius: 6, backgroundColor: '#FFF', borderColor: '#CCCCCC', borderWidth: 0.5}}>
+                        <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', marginRight: 3, width: Dimensions.get('window').width * 0.35,  height: 45, borderRadius: 6, backgroundColor: '#FFF', borderColor: '#CCCCCC', borderWidth: 0.5}}>
                             <Text style={{fontSize: 15, fontWeight: '500', color: '#000'}}>30 dagen</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', marginLeft: 3, width: Dimensions.get('window').width * 0.35,  height: 45, borderRadius: 6, backgroundColor: '#FFF', borderColor: '#CCCCCC', borderWidth: 0.5}}>
