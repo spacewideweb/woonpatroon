@@ -216,7 +216,7 @@ export default class StatistiekenScreen extends Component {
                     </View>
                 </View>
                 <BarChart
-                    style={{marginTop: 10, padding: 10, height: 300}}
+                    style={{padding: 10, height: 300}}
                     xAxis={xAxisStyle}
                     yAxis={{right: yAxisStyle}}
                     data={dataStyle}
@@ -557,7 +557,7 @@ export default class StatistiekenScreen extends Component {
 
     renderPagination = () => {
         return (
-            <View style={this.state.page === 0 ? {width: Dimensions.get('window').width, height: 100, justifyContent: 'center', flexDirection: 'row'} : {width: Dimensions.get('window').width, height: 20, justifyContent: 'center', flexDirection: 'row'}}>
+            <View style={this.state.page === 0 ? {width: Dimensions.get('window').width, height: 80, justifyContent: 'center', flexDirection: 'row'} : {width: Dimensions.get('window').width, height: 20, justifyContent: 'center', flexDirection: 'row'}}>
                 <TouchableOpacity style={[styles.paginationItem, this.state.page === 0 ? styles.paginationSelect : styles.paginationUnSelect]} onPress={this.clickPage1}>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.paginationItem, this.state.page === 1 ? styles.paginationSelect : styles.paginationUnSelect]} onPress={this.clickPage2}>
@@ -583,9 +583,20 @@ export default class StatistiekenScreen extends Component {
                         console.log('Begin scrolling')
                     }}
                     onMomentumScrollEnd={() => {
-                        console.log('End scrolling')
+            
+                        var interval = Dimensions.get('window').width;
+                        var pageIndex = Math.ceil(this.lastx / interval) === 4 ? Math.floor(this.lastx/interval) : Math.ceil(this.lastx/interval)
+                        this.setState({
+                            page: pageIndex
+                        })
                     }}
-                    scrollEventThrottle={16}
+                    onScroll={(event) => {
+                        var nextx = event.nativeEvent.contentOffset.x;
+                        this.scrollingRight = (nextx > this.lastx);
+                        this.lastx = nextx;
+                    }}
+    
+                    scrollEventThrottle={32}
                     style={{width: Dimensions.get('window').width, marginBottom: 10}}>
                     {this.renderContent1()}
                     {this.renderContent2()}
