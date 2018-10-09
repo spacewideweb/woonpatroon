@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Dimensions, TouchableOpacity, Text, ScrollView, processColor, Animated, Image } from 'react-native';
 
-import { BarChart } from 'react-native-charts-wrapper';
+import { BarChart, PieChart } from 'react-native-charts-wrapper';
 
 const WIDTH = Dimensions.get('window').width;
 const chartConfig = {
@@ -55,7 +55,20 @@ export default class StatistiekenScreen extends Component {
                         }
                     }
                 }
-            }
+            },
+            pie: {
+                detail: {
+                    time_value_list: [2017],
+                    legend_list: ['Group1', 'Group2', 'Group3', 'Group4', 'Group5'],
+                    dataset: {
+                        Group1: {'2017': 9},
+                        Group2: {'2017': 17},
+                        Group3: {'2017': 29},
+                        Group4: {'2017': 32},
+                        Group5: {'2017': 45}
+                    }
+                }
+            },
         }
 
     }
@@ -214,6 +227,53 @@ export default class StatistiekenScreen extends Component {
     }
 
     renderContent2 = () => {
+        const time = this.state.pie.detail.time_value_list
+        const legend = this.state.pie.detail.legend_list
+        const dataset = this.state.pie.detail.dataset
+
+        var dataSetsValue = []
+        var dataStyle = {}
+        var legendStyle = {}
+        var descStyle = {}
+        var xAxisStyle = {}
+        var chooseStyle = {}
+        var valueLegend = []
+        var colorLegend = [processColor('#4285F4'), processColor('#080808'), processColor('#6C919D'), processColor('#A7ECF9'), processColor('#DBF7FC')]
+
+        legend.map((legendValue) => {
+            time.map((timeValue) => {
+                const datasetValue = dataset[legendValue]
+                const datasetTimeValue = datasetValue[timeValue]
+                valueLegend.push({value: parseInt(datasetTimeValue), label: legendValue})
+            })
+        })
+
+        const datasetObject = {
+            values: valueLegend,
+            label: '',
+            enabled: false,
+            config: {
+                enabled: false,
+                colors: colorLegend,
+                valueTextSize: 0,
+                sliceSpace: 0,
+            }
+        }
+
+        dataSetsValue.push(datasetObject)
+
+        legendStyle = {
+            enabled: false,
+        }
+
+        dataStyle = {
+            dataSets: dataSetsValue
+        }
+
+        descStyle = {
+            text: ''
+        }
+
         return (
             <View style={{width: Dimensions.get('window').width, height: 600}}>
                 <View style={{alignItems: 'center', width: '100%', height: 100}}>
@@ -243,6 +303,14 @@ export default class StatistiekenScreen extends Component {
                     </View>
                 </View>
                 <View style={{width: '100%', height: 250}}>
+                    <PieChart
+                        style={{width: Dimensions.get('window').width, height: 250}}
+                        chartDescription={descStyle}
+                        data={dataStyle}
+                        legend={legendStyle}
+                        rotationEnabled={false}
+                        highlightPerTapEnabled={false}
+                        touchEnabled={false}/>
                 </View>
                 <View 
                     style={{width: Dimensions.get('window').width, height: Dimensions.get('window').height/4, justifyContent: 'center', alignItems:'center', marginTop: -30}}>
@@ -266,6 +334,52 @@ export default class StatistiekenScreen extends Component {
     }
 
     renderContent3 = () => {
+        const time = this.state.pie.detail.time_value_list
+        const legend = this.state.pie.detail.legend_list
+        const dataset = this.state.pie.detail.dataset
+
+        var dataSetsValue = []
+        var dataStyle = {}
+        var legendStyle = {}
+        var descStyle = {}
+        var xAxisStyle = {}
+        var chooseStyle = {}
+        var valueLegend = []
+        var colorLegend = [processColor('#4285F4'), processColor('#080808'), processColor('#6C919D'), processColor('#A7ECF9'), processColor('#DBF7FC')]
+
+        legend.map((legendValue) => {
+            time.map((timeValue) => {
+                const datasetValue = dataset[legendValue]
+                const datasetTimeValue = datasetValue[timeValue]
+                valueLegend.push({value: parseInt(datasetTimeValue), label: legendValue})
+            })
+        })
+
+        const datasetObject = {
+            values: valueLegend,
+            label: '',
+            enabled: false,
+            config: {
+                enabled: false,
+                colors: colorLegend,
+                valueTextSize: 0,
+                sliceSpace: 0,
+            }
+        }
+
+        dataSetsValue.push(datasetObject)
+
+        legendStyle = {
+            enabled: false,
+        }
+
+        dataStyle = {
+            dataSets: dataSetsValue
+        }
+
+        descStyle = {
+            text: ''
+        }
         return (
             <View style={{width: Dimensions.get('window').width, height: 600}}>
                 <View style={{alignItems: 'center', width: '100%', height: 100}}>
@@ -295,6 +409,14 @@ export default class StatistiekenScreen extends Component {
                     </View>
                 </View>
                 <View style={{width: '100%', height: 250}}>
+                    <PieChart
+                        style={{width: Dimensions.get('window').width, height: 250}}
+                        chartDescription={descStyle}
+                        data={dataStyle}
+                        legend={legendStyle}
+                        rotationEnabled={false}
+                        highlightPerTapEnabled={false}
+                        touchEnabled={false}/>
                 </View>
                 <View 
                     style={{width: Dimensions.get('window').width, height: Dimensions.get('window').height/4, justifyContent: 'center', alignItems:'center', marginTop: -30}}>
@@ -318,6 +440,52 @@ export default class StatistiekenScreen extends Component {
     }
 
     renderContent4 = () => {
+        const time = this.state.pie.detail.time_value_list
+        const legend = this.state.pie.detail.legend_list
+        const dataset = this.state.pie.detail.dataset
+
+        var dataSetsValue = []
+        var dataStyle = {}
+        var legendStyle = {}
+        var descStyle = {}
+        var xAxisStyle = {}
+        var chooseStyle = {}
+        var valueLegend = []
+        var colorLegend = [processColor('#4285F4'), processColor('#080808'), processColor('#6C919D'), processColor('#A7ECF9'), processColor('#DBF7FC')]
+
+        legend.map((legendValue) => {
+            time.map((timeValue) => {
+                const datasetValue = dataset[legendValue]
+                const datasetTimeValue = datasetValue[timeValue]
+                valueLegend.push({value: parseInt(datasetTimeValue), label: legendValue})
+            })
+        })
+
+        const datasetObject = {
+            values: valueLegend,
+            label: '',
+            enabled: false,
+            config: {
+                enabled: false,
+                colors: colorLegend,
+                valueTextSize: 0,
+                sliceSpace: 0,
+            }
+        }
+
+        dataSetsValue.push(datasetObject)
+
+        legendStyle = {
+            enabled: false,
+        }
+
+        dataStyle = {
+            dataSets: dataSetsValue
+        }
+
+        descStyle = {
+            text: ''
+        }
         return (
             <View style={{width: Dimensions.get('window').width, height: 600}}>
                 <View style={{alignItems: 'center', width: '100%', height: 100}}>
@@ -347,6 +515,14 @@ export default class StatistiekenScreen extends Component {
                     </View>
                 </View>
                 <View style={{width: '100%', height: 250}}>
+                    <PieChart
+                        style={{width: Dimensions.get('window').width, height: 250}}
+                        chartDescription={descStyle}
+                        data={dataStyle}
+                        legend={legendStyle}
+                        rotationEnabled={false}
+                        highlightPerTapEnabled={false}
+                        touchEnabled={false}/>
                 </View>
                 <View 
                     style={{width: Dimensions.get('window').width, height: Dimensions.get('window').height/4, justifyContent: 'center', alignItems:'center', marginTop: -30}}>
