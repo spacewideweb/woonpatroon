@@ -77,24 +77,29 @@ export default class StatistiekenScreen extends Component {
         this.setState({
             page: 0
         })
+
+        this.snapScroll.scrollTo({x: 0, y:0, animated: true})
     }
 
     clickPage2 = () => {
         this.setState({
             page : 1
         })
+        this.snapScroll.scrollTo({x: Dimensions.get('window').width, y:0, animated: true})
     }
 
     clickPage3 = () => {
         this.setState({
             page : 2
         })
+        this.snapScroll.scrollTo({x: Dimensions.get('window').width * 2, y:0, animated: true})
     }
 
     clickPage4 = () => {
         this.setState({
             page: 3
         })
+        this.snapScroll.scrollTo({x: Dimensions.get('window').width * 3, y:0, animated: true})
     }
 
     getRandomColor() {
@@ -107,7 +112,6 @@ export default class StatistiekenScreen extends Component {
     }
 
     renderContent1 = () => {
-
         const style1 = {
             barWidth: 0.1,
             groupSpace: 0.2,
@@ -310,6 +314,7 @@ export default class StatistiekenScreen extends Component {
                         legend={legendStyle}
                         rotationEnabled={false}
                         highlightPerTapEnabled={false}
+                        holeRadius={70}
                         touchEnabled={false}/>
                 </View>
                 <View 
@@ -416,6 +421,7 @@ export default class StatistiekenScreen extends Component {
                         legend={legendStyle}
                         rotationEnabled={false}
                         highlightPerTapEnabled={false}
+                        holeRadius={70}
                         touchEnabled={false}/>
                 </View>
                 <View 
@@ -522,6 +528,7 @@ export default class StatistiekenScreen extends Component {
                         legend={legendStyle}
                         rotationEnabled={false}
                         highlightPerTapEnabled={false}
+                        holeRadius={70}
                         touchEnabled={false}/>
                 </View>
                 <View 
@@ -564,6 +571,7 @@ export default class StatistiekenScreen extends Component {
         return (
             <View style={styles.container}>
                 <ScrollView
+                    ref={(snapScroll) => {this.snapScroll = snapScroll;}}
                     horizontal={true}
                     pagingEnabled={true}
                     showsHorizontalScrollIndicator={false}
