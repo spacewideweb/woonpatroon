@@ -33,7 +33,7 @@ const LeadsStack = createStackNavigator({
     }
 },{
     navigationOptions: ({ navigation }) => ({
-        headerStyle: {height: 120},
+        headerStyle: {height: 110},
         headerTitleStyle: {position:'absolute', width: WIDTH, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: - WIDTH / 2, fontSize: 30, color: '#666666', fontWeight: '800'},
     })
 });
@@ -47,7 +47,7 @@ const RapportenStack = createStackNavigator({
     }
 }, {
     navigationOptions: ({ navigation }) => ({
-        headerStyle: {height: 120},
+        headerStyle: {height: 110},
         headerTitleStyle: {position:'absolute', width: WIDTH, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: - WIDTH / 2, fontSize: 30, color: '#666666', fontWeight: '800'},
     })
 });
@@ -61,7 +61,7 @@ const AanvragenStack = createStackNavigator({
     }
 },{
     navigationOptions: ({ navigation }) => ({
-        headerStyle: {height: 120},
+        headerStyle: {height: 110},
         headerTitleStyle: {position:'absolute', width: WIDTH, height: 50, textAlign: 'center', bottom: 10, left: '50%', marginLeft: - WIDTH / 2, fontSize: 30, color: '#666666', fontWeight: '800'},
     })
 });
