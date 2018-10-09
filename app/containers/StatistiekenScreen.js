@@ -315,6 +315,7 @@ export default class StatistiekenScreen extends Component {
                         rotationEnabled={false}
                         highlightPerTapEnabled={false}
                         holeRadius={70}
+                        drawEntryLabels={false}
                         touchEnabled={false}/>
                 </View>
                 <View 
@@ -422,6 +423,7 @@ export default class StatistiekenScreen extends Component {
                         rotationEnabled={false}
                         highlightPerTapEnabled={false}
                         holeRadius={70}
+                        drawEntryLabels={false}
                         touchEnabled={false}/>
                 </View>
                 <View 
@@ -529,6 +531,7 @@ export default class StatistiekenScreen extends Component {
                         rotationEnabled={false}
                         highlightPerTapEnabled={false}
                         holeRadius={70}
+                        drawEntryLabels={false}
                         touchEnabled={false}/>
                 </View>
                 <View 
