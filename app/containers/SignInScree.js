@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View,  Image, StyleSheet, Dimensions } from 'react-native';
 
 import { ZTextInput } from '../components/ZTextInput';
+import { ZPasswordInput } from '../components/ZPasswordInput';
 import { ZSubmitButton } from '../components/ZSubmitButton';
 
 const WIDTH = Dimensions.get('window').width;
@@ -10,10 +11,20 @@ export default class SignInScreen extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            showPassword: true,
+        }
     }
 
     _onSubmitLogin = () => {
         this.props.navigation.navigate('App');
+    }
+
+
+    onShowPassword = () => {
+        this.setState({
+            showPassword: !this.state.showPassword
+        })
     }
 
     render() {
@@ -30,10 +41,11 @@ export default class SignInScreen extends Component {
                             placeholder="Enter emailadres"
                             password={false}
                             label="Emailadres"/>
-                        <ZTextInput 
+                        <ZPasswordInput 
                             style={styles.itemContainer}
                             placeholder="Enter watchwoord"
-                            password={true}
+                            password={this.state.showPassword}
+                            onShowPassword={this.onShowPassword}
                             label="Watchtwoord"/>
                         <ZSubmitButton
                             label="Log In"

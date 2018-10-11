@@ -15,7 +15,7 @@ const propTypes = {
     ])
 };
 
-const ZTextInput = (props) => {
+const ZPasswordInput = (props) => {
     const { label, placeholder, password, style, onShowPassword } = props;
     const { 
         container, 
@@ -35,7 +35,9 @@ const ZTextInput = (props) => {
                     placeholder={placeholder}/>
                 { password ? <TouchableOpacity style={showBtnContainer} onPress={onShowPassword}>
                     <Text style={showText}>Show</Text>
-                </TouchableOpacity>: null}
+                </TouchableOpacity>: <TouchableOpacity style={showBtnContainer} onPress={onShowPassword}>
+                    <Text style={showText}>Hide</Text>
+                </TouchableOpacity>}
             </View>
         </View>
     )
@@ -76,6 +78,6 @@ const styles = {
     }
 }
 
-ZTextInput.propTypes = propTypes;
-export { ZTextInput };
+ZPasswordInput.propTypes = propTypes;
+export { ZPasswordInput };
 
