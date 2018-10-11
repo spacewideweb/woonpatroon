@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { View, TouchableOpacity, Text ,StyleSheet, Image, Dimensions } from 'react-native';
 
+import Icon from 'react-native-vector-icons/AntDesign';
+
 const HEIGHT = Dimensions.get('window').height;
 const WIDTH = Dimensions.get('window').width;
 
@@ -32,7 +34,8 @@ export default class LeadsMainScreen extends Component {
                     <Image source={require('../res/images/Rectangle.png')} style={styles.itemBackground}/>
                     <View style={styles.itemWrapper}>
                         <Text style={styles.itemText}>Statistieken</Text>
-                        <Image source={require('../res/images/chart-bar.png')} style={styles.itemIcon}/>
+                        <Icon name="piechart" size={36} color="#4285F4"/>
+                        {/* <Image source={require('../res/images/chart-bar.png')} style={styles.itemIcon}/> */}
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity 
@@ -41,7 +44,8 @@ export default class LeadsMainScreen extends Component {
                     <Image source={require('../res/images/Rectangle.png')} style={styles.itemBackground}/>
                     <View style={styles.itemWrapper}>
                         <Text style={styles.itemText}>Overzicht</Text>
-                        <Image source={require('../res/images/address-card.png')} style={styles.itemIcon}/>
+                        <Icon name="idcard" size={36} color="#4285F4"/>
+                        {/* <Image source={require('../res/images/address-card.png')} style={styles.itemIcon}/> */}
                     </View>
                 </TouchableOpacity>
             </View>

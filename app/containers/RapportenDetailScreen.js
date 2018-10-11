@@ -138,6 +138,8 @@ const styles = StyleSheet.create({
     labelText: {
         textAlign: 'center',
         marginTop: 30,
+        marginLeft: 50, 
+        marginRight: 50
     },
     downloadButton: {
         justifyContent: 'center',
