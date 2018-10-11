@@ -10,6 +10,8 @@ target 'WoonPatroon' do
   target 'WoonPatroon-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   end
 
   target 'WoonPatroonTests' do

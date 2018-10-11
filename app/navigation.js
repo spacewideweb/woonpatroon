@@ -14,6 +14,8 @@ import AuthLoadingScreen from './containers/AuthLoadingScreen';
 import PersonDetailScreen from './containers/PersonDetailScreen';
 import AdresgegevensScreen from './containers/AdresgegevensScreen';
 
+import Icon from 'react-native-vector-icons/AntDesign';
+
 const WIDTH = Dimensions.get('window').width;
 
 const AuthStack = createStackNavigator({ SignIn: SignInScreen });
@@ -75,11 +77,11 @@ const AppStack = createBottomTabNavigator({
         tabBarIcon: ({ focused, horizontal, tintColor }) => {
             const { routeName } = navigation.state;
             if (routeName === 'Leads') {
-                return <Image source={focused ? require('./res/images/check-square-selected.png') : require('./res/images/check-square.png')} size={horizontal ? 20 : 25} color={tintColor}/>
+                return <Icon name="checksquare" size={horizontal? 20: 25} color={tintColor}/>
             } else if (routeName === 'Rapporten') {
-                return <Image source={focused ? require('./res/images/chart-line-selected.png') : require('./res/images/chart-line.png')} size={horizontal ? 20 : 25} color={tintColor}/>
+                return <Icon name="barchart" size={horizontal? 20: 25} color={tintColor}/>
             } else {
-                return <Image source={focused ? require('./res/images/calculator-selected.png') : require('./res/images/calculator.png')} size={horizontal ? 20 : 25} color={tintColor}/>
+                return <Icon name="calculator" size={horizontal? 20: 25} color={tintColor}/>
             }
         }
     }),
