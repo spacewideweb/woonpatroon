@@ -1777,6 +1777,7 @@
 				);
 				PRODUCT_NAME = WoonPatroon;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sonnaris/Documents/WoonPatroon/ios/WoonPatroon-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1796,6 +1797,7 @@
 				);
 				PRODUCT_NAME = WoonPatroon;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sonnaris/Documents/WoonPatroon/ios/WoonPatroon-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
