@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     },
 
     itemContainer: {
-        width: WIDTH - 100,
+        width: WIDTH - 120,
         height: 90,
         marginBottom: 20,
     },

@@ -12,6 +12,11 @@ const WIDTH = Dimensions.get('window').width;
 
 export default class PersonDetailScreen extends Component {
 
+    static navigationOptions = {
+        title: 'Paul van Loon',
+        headerRight: (<View/>)
+    }
+
     constructor(props) {
         super(props);
         this.state = {
@@ -79,19 +84,28 @@ export default class PersonDetailScreen extends Component {
                     <View style={styles.infoWrapper}>
                         <View style={styles.itemWrapper}>
                             <Text style={styles.mutateText}>Gebied</Text>
-                            <Text>{this.state.item.gebied}</Text>
+                            <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+                                <Text style={{fontWeight: '500', marginRight: 5}}>{this.state.item.height}</Text>
+                                <Text>{this.state.item.gebied}</Text>
+                            </View>
                         </View>
                         <View style={styles.itemWrapper}>
                             <Text style={styles.mutateText}>Bouw</Text>
-                            <Text>{this.state.item.bouw}</Text>
+                            <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+                                <Text>{this.state.item.bouw}</Text>
+                                <Text style={{fontWeight: '500', marginLeft: 5}}>{this.state.item.year}</Text>
+                            </View>
                         </View>
                         <View style={styles.itemWrapper}>
                             <Text style={styles.mutateText}>Type</Text>
-                            <Text>{this.state.item.type}</Text>
+                            <Text style={{fontWeight: '500'}}>{this.state.item.type}</Text>
                         </View>
                         <View style={styles.itemWrapper}>
                             <Text style={styles.mutateText}>Schatting</Text>
-                            <Text>{this.state.item.schatting}</Text>
+                            <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+                                <Text>{this.state.item.schatting}</Text>
+                                <Text style={{fontWeight: '500', marginLeft: 5}}>${this.state.item.price}</Text>
+                            </View>
                         </View>
                     </View>
                 </View>
@@ -99,20 +113,20 @@ export default class PersonDetailScreen extends Component {
                     <Image source={require('../res/images/BG.png')} style={styles.background}/>
                     <View style={{width: WIDTH - 120, height: '50%', justifyContent: 'center', alignItems:'center', marginTop: -10,}}>
                         <View style={styles.propertySub}>
-                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3}}>
+                            <View style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3}}>
                                 <Text style={{fontWeight: '500'}}>Nieuwsgierig</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
+                            </View>
+                            <View style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
                                 <Text style={{fontWeight: '500'}}>Wilt vberkopen</Text>
-                            </TouchableOpacity>
+                            </View>
                         </View>
                         <View style={styles.propertySub}>
-                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3,}}>
+                            <View style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3,}}>
                                 <Text style={{fontWeight: '500'}}>Huur</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
+                            </View>
+                            <View style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
                                 <Text style={{fontWeight: '500'}}>Koop</Text>
-                            </TouchableOpacity>
+                            </View>
                         </View>
                     </View>
                 </View>

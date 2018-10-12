@@ -35,7 +35,6 @@ export default class LeadsMainScreen extends Component {
                     <View style={styles.itemWrapper}>
                         <Text style={styles.itemText}>Statistieken</Text>
                         <Icon name="piechart" size={36} color="#4285F4"/>
-                        {/* <Image source={require('../res/images/chart-bar.png')} style={styles.itemIcon}/> */}
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity 
@@ -45,7 +44,6 @@ export default class LeadsMainScreen extends Component {
                     <View style={styles.itemWrapper}>
                         <Text style={styles.itemText}>Overzicht</Text>
                         <Icon name="idcard" size={36} color="#4285F4"/>
-                        {/* <Image source={require('../res/images/address-card.png')} style={styles.itemIcon}/> */}
                     </View>
                 </TouchableOpacity>
             </View>
