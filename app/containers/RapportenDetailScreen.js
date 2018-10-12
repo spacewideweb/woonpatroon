@@ -39,20 +39,20 @@ export default class RapportenDetailScreen extends Component {
                     <Image style={styles.containerBackground} source={require('../res/images/Rectangle.png')}/>
                     <View style={{width: WIDTH - 120, height: '50%', justifyContent: 'center', alignItems:'center', marginTop: -10,}}>
                         <View style={styles.propertySub}>
-                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3}}>
+                            <View style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3}}>
                                 <Text style={{fontWeight: '500'}}>Appartement</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
+                            </View>
+                            <View style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
                                 <Text style={{fontWeight: '500'}}>Hoekwoning</Text>
-                            </TouchableOpacity>
+                            </View>
                         </View>
                         <View style={styles.propertySub}>
-                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3,}}>
+                            <View style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginRight: 3,}}>
                                 <Text style={{fontWeight: '500'}}>Tussenwoning</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
+                            </View>
+                            <View style={{flex: 1, height: '100%', borderColor: '#CCCCCC', borderWidth: 0.5, borderRadius: 4, justifyContent: 'center', alignItems:'center', marginLeft: 3}}>
                                 <Text style={{fontWeight: '500'}}>2-onder-1-kap</Text>
-                            </TouchableOpacity>
+                            </View>
                         </View>
                     </View>
                 </View>
@@ -61,11 +61,14 @@ export default class RapportenDetailScreen extends Component {
                     <View style={styles.propertyWrapper}>
                         <View style={styles.propertyItemContainer}>
                             <Text style={styles.mutateText}>Schatting</Text>
-                            <Text>${this.state.item.price}</Text>
+                            <Text style={{fontWeight: '500'}}>${this.state.item.price}</Text>
                         </View>
                         <View style={styles.propertyItemContainer}>
                             <Text style={styles.mutateText}>Gebied</Text>
-                            <Text>{this.state.item.gebied}</Text>
+                            <View style={{flexDirection: 'row', justifyContent: 'center', alignItems:'center'}}>
+                                <Text style={{fontWeight: '500', marginRight: 5}}>{this.state.item.height}</Text>
+                                <Text>{this.state.item.gebied}</Text>
+                            </View>
                         </View>
                         <View style={styles.propertyItemContainer}>
                             <Text style={styles.mutateText}>Bouw</Text>
@@ -95,9 +98,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     addressContainer: {
-        flex: 1,
+        flex: 1.4,
         justifyContent: 'center',
         alignItems: 'center',
+        marginTop: 10,
     },
     selectionContainer: {
         flex: 2,
@@ -109,7 +113,7 @@ const styles = StyleSheet.create({
         flex: 1.8,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: -30,
+        marginTop: -35,
     },
     pdfContainer: {
         flex: 2,

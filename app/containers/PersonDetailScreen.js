@@ -169,14 +169,17 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFF'
     },
     contactContainer: {
-        flex: 0.8,
+        flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginTop: 10,
     },
     infoContainer: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginTop: -20, 
+        marginBottom: -20,
     },
     infoWrapper: {
         width: WIDTH - 120,

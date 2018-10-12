@@ -53,8 +53,9 @@ const DATA = [
         id: 0,
         label: '4706KG - 131',
         address: 'Koraaldijk 131, 4706KG',
-        price: 240.500,
-        gebied: '143m2 woonoppervlakte',
+        price: '240.500',
+        gebied: 'woonoppervlakte',
+        height: '143m2',
         bouw: '2 oktober 2018',
         text: '4706KG - 131 - 01/10/2018'
     },
@@ -62,8 +63,9 @@ const DATA = [
         id: 1,
         label: '4706ES - 21',
         address: 'Koraaldijk 131, 4706KG',
-        price: 240.500,
-        gebied: '143m2 woonoppervlakte',
+        price: '240.500',
+        gebied: 'woonoppervlakte',
+        height: '143m2',
         bouw: '2 oktober 2018',
         text: '4706ES - 21 - 29/09/2018'
     }
