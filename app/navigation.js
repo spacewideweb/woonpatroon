@@ -13,6 +13,7 @@ import AanvragenScreen from './containers/AanvragenScreen';
 import AuthLoadingScreen from './containers/AuthLoadingScreen';
 import PersonDetailScreen from './containers/PersonDetailScreen';
 import AdresgegevensScreen from './containers/AdresgegevensScreen';
+import BouwkenmerkenSelectScreen from './containers/BouwkenmerkenSelectScreen';
 
 import Icon from 'react-native-vector-icons/AntDesign';
 
@@ -60,6 +61,9 @@ const AanvragenStack = createStackNavigator({
     },
     Adresgegevens: {
         screen: AdresgegevensScreen
+    },
+    Bouwkenmerken: {
+        screen: BouwkenmerkenSelectScreen
     }
 },{
     navigationOptions: ({ navigation }) => ({

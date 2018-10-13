@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Dimensions, Image, Text } from 'react-native';
 import { ZTextInput } from '../components/ZTextInput';
 import { ZSubmitButton } from '../components/ZSubmitButton';
+import { ZSelectInput } from '../components/ZSelectInput';
 
 const WIDTH = Dimensions.get('window').width;
 
@@ -13,11 +14,14 @@ const PAGINATIONS = [
 
 export default class AdresgegevensScreen extends Component {
 
-    static navigationOptions = {
-        title: 'Adresgegevens',
-        headerLeft: (<View/>),
-        headerRight: (<View/>)
-    }
+    static navigationOptions = ({navigation}) => {
+        const { state } = navigation;
+        return {
+            title: `${state.params.title}`,
+            headerRight: (<View/>),
+            headerLeft: (<View/>)
+        };
+    };
     
     constructor(props) {
         super(props);
@@ -27,18 +31,39 @@ export default class AdresgegevensScreen extends Component {
         }
     }
 
+    changeTitle = (text) => {
+        const { setParams } = this.props.navigation;
+        setParams({title: text});
+    }
+
     _clickedVolgende = () => {
         this.setState({
             page: 1,
             pagination: PAGINATIONS[1],
-        })
+        });
+
+        this.changeTitle('Bouwkenmerken');
     }
 
     _clickedAfronden = () => {
         this.setState({
             page: 2,
             pagination: PAGINATIONS[2]
-        })
+        });
+
+        this.changeTitle('Aanvraag klaar!');
+    }
+
+    clickPropertyType = () => {
+        this.props.navigation.navigate('Bouwkenmerken');
+    }
+
+    clickWoonoppervlakte = () => {
+        this.props.navigation.navigate('Bouwkenmerken');
+    }
+
+    clickBouwjaar = () => {
+        this.props.navigation.navigate('Bouwkenmerken');
     }
 
     renderPages = (page) => {
@@ -67,18 +92,24 @@ export default class AdresgegevensScreen extends Component {
             return (
                 <View style={styles.secondContainer}>
                     <Image source={require('../res/images/BG.png')} style={styles.background}/>
-                    <ZTextInput
+                    <ZSelectInput
                         style={styles.itemInputContainer1}
-                        password={false}
-                        label="Bouwjaar"/>
-                    <ZTextInput
+                        m2={false}
+                        text=""
+                        label="Bouwjaar"
+                        onPress={this.clickBouwjaar}/>
+                    <ZSelectInput
                         style={styles.itemInputContainer1}
-                        password={false}
-                        label="Woonoppervlakte"/>
-                    <ZTextInput
+                        m2={true}
+                        text=""
+                        label="Woonoppervlakte"
+                        onPress={this.clickWoonoppervlakte}/>
+                    <ZSelectInput
                         style={styles.itemInputContainer1}
-                        password={false}
-                        label="Property Type"/>
+                        m2={false}
+                        text=""
+                        label="Property Type"
+                        onPress={this.clickPropertyType}/>
                     <ZSubmitButton
                         label="Afronden"
                         height={60}

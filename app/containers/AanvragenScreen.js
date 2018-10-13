@@ -14,7 +14,7 @@ export default class AanvragenScreen extends Component {
     }
 
     _onSubmit = () => {
-        this.props.navigation.navigate('Adresgegevens');
+        this.props.navigation.navigate('Adresgegevens', {title: 'Adresgegevens'});
     }
 
     render() {
