@@ -55,15 +55,15 @@ export default class AdresgegevensScreen extends Component {
     }
 
     clickPropertyType = () => {
-        this.props.navigation.navigate('Bouwkenmerken', {title: 'Woningtype'});
+        this.props.navigation.navigate('Bouwkenmerken', {title: 'Woningtype', type: 2});
     }
 
     clickWoonoppervlakte = () => {
-        this.props.navigation.navigate('Bouwkenmerken', {title: 'Woonoppervlakte'});
+        this.props.navigation.navigate('Bouwkenmerken', {title: 'Woonoppervlakte', type: 1});
     }
 
     clickBouwjaar = () => {
-        this.props.navigation.navigate('Bouwkenmerken', {title: 'Bouwjaar'});
+        this.props.navigation.navigate('Bouwkenmerken', {title: 'Bouwjaar', type:0});
     }
 
     renderPages = (page) => {
@@ -139,7 +139,7 @@ export default class AdresgegevensScreen extends Component {
                 <View style={styles.wrapper}>
                     {this.renderPages(this.state.page)}
                     <View style={styles.paginationContainer}>
-                        <Image source={this.state.pagination} style={{position:'absolute', top: 0, left: 0, width: '100%', height: '100%', resizeMode:'stretch'}}/>
+                        <Image source={this.state.pagination} style={{position:'absolute', top: 0, left: 0, width: '100%', height: '100%', resizeMode:'cover'}}/>
                     </View>
                 </View>
             </View>
@@ -195,17 +195,17 @@ const styles = StyleSheet.create({
         resizeMode: 'stretch'
     },
     itemInputContainer: {
-        width: WIDTH - 100, 
+        width: WIDTH * 0.7, 
         height: '23%',
         marginBottom: 10,
     },
     itemInputContainer1: {
-        width: WIDTH - 100, 
+        width: WIDTH  * 0.7, 
         height: '17.5%',
         marginBottom: 10,
     },
     buttonContainer: {
-        width: WIDTH - 100, 
+        width: WIDTH * 0.7, 
         height: 60,
     }
 })

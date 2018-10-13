@@ -138,6 +138,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-wheel-picker-android')
     compile project(':react-native-vector-icons')
     compile project(':react-native-charts-wrapper')
     compile fileTree(dir: "libs", include: ["*.jar"])
