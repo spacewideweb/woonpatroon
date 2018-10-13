@@ -55,15 +55,15 @@ export default class AdresgegevensScreen extends Component {
     }
 
     clickPropertyType = () => {
-        this.props.navigation.navigate('Bouwkenmerken');
+        this.props.navigation.navigate('Bouwkenmerken', {title: 'Woningtype'});
     }
 
     clickWoonoppervlakte = () => {
-        this.props.navigation.navigate('Bouwkenmerken');
+        this.props.navigation.navigate('Bouwkenmerken', {title: 'Woonoppervlakte'});
     }
 
     clickBouwjaar = () => {
-        this.props.navigation.navigate('Bouwkenmerken');
+        this.props.navigation.navigate('Bouwkenmerken', {title: 'Bouwjaar'});
     }
 
     renderPages = (page) => {
