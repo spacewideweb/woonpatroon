@@ -18,7 +18,7 @@ export default class LeadsMainScreen extends Component {
     }
 
     _onClickStatistieken = () => {
-        this.props.navigation.navigate('Statistieken');
+        this.props.navigation.navigate('Statistieken', {title: 'Leads per maand'});
     }
 
     _onClickOverzicht = () => {

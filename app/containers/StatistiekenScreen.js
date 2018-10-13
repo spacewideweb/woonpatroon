@@ -13,10 +13,13 @@ const chartConfig = {
 
 export default class StatistiekenScreen extends Component {
 
-    static navigationOptions = {
-        title : 'Leads per maand',
-        headerRight: (<View/>)
-    }
+    static navigationOptions = ({navigation}) => {
+        const { state } = navigation;
+        return {
+            title: `${state.params.title}`,
+            headerRight: (<View/>)
+        };
+    };
 
     constructor(props) {
         super(props);
@@ -73,12 +76,18 @@ export default class StatistiekenScreen extends Component {
 
     }
 
+    changeTitle = (text) => {
+        const { setParams } = this.props.navigation;
+        setParams({title: text});
+    }
+
     clickPage1 = () => {
         this.setState({
             page: 0
         })
 
         this.snapScroll.scrollTo({x: 0, y:0, animated: true})
+        this.changeTitle('Leads per maand');
     }
 
     clickPage2 = () => {
@@ -86,6 +95,8 @@ export default class StatistiekenScreen extends Component {
             page : 1
         })
         this.snapScroll.scrollTo({x: Dimensions.get('window').width, y:0, animated: true})
+
+        this.changeTitle('Leads per woningtype');
     }
 
     clickPage3 = () => {
@@ -93,6 +104,7 @@ export default class StatistiekenScreen extends Component {
             page : 2
         })
         this.snapScroll.scrollTo({x: Dimensions.get('window').width * 2, y:0, animated: true})
+        this.changeTitle('Leads naar motivatie');
     }
 
     clickPage4 = () => {
@@ -100,6 +112,7 @@ export default class StatistiekenScreen extends Component {
             page: 3
         })
         this.snapScroll.scrollTo({x: Dimensions.get('window').width * 3, y:0, animated: true})
+        this.changeTitle('Leads naar plannen');
     }
 
     getRandomColor() {
